@@ -3,14 +3,14 @@ services:
     container_name: postgres_container
     image: postgres
     environment:
-      POSTGRES_USER: postgres
+      POSTGRES_USER: medet
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: jobapp
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     networks:
       - postgres
     restart: unless-stopped

@@ -52,7 +52,7 @@ public class CompanyController {
 
         if (company != null) {
             return new ResponseEntity<>(company, HttpStatus.OK);
-        }else {
+        } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
